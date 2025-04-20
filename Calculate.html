@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            font-family: 'poppins',
+            sans-serif;
+
+
+        }
+        .container
+        {
+            height: 500px;
+            width: 300px;
+            background-color: pink;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .circle
+        {
+            margin: 7px auto;
+            width: 40px;
+            height: 40px;
+            border: 5px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            border-top-color: yellow;
+            animation: spin 1s linear 2;
+        }
+          .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+        @keyframes spin{
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="Calculate" method="post">
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <h4>Fill Required Credentials..</h4>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <b>Name:</b><input type='text' name='name' placeholder='Enter your Name'/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <b>DOB:</b><input type='DATE' name='date' placeholder='Enter your Name'/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <b><input type='Submit' Value='PRESS'/></b>
+                    </div>
+                </td>
+            </tr>
+            
+        </table> 
+        </form>   
+    </div>
+</body>
+</html>
